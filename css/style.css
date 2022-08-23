@@ -52,8 +52,22 @@ footer {
   color: whitesmoke;
 }
 
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
 a:visited {
   color: #fff;
+}
+
+a:hover,
+a:focus {
+  color: rgb(167, 167, 167);
+}
+
+a:active {
+  color: rgba(167, 167, 167, 0.5);
 }
 
 h2 {
