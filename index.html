@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Landing Page</title>
+    <title>Whiskey Wisdom Tickets</title>
     <style>
       body,
       html {
@@ -16,6 +15,7 @@
         background-position: center;
         height: 100vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
       }
@@ -26,24 +26,23 @@
         width: 60%;
         height: 400px;
         overflow-y: auto;
-      }
-      input[type="text"] {
-        padding: 10px;
-        margin-bottom: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        width: 100%;
+        font-size: 16px; /* Make the text larger */
       }
       a.button {
         display: inline-block;
         padding: 10px 20px;
+        margin-top: 10px; /* Add margin to place button below the text box */
         background-color: #333;
         color: white;
         border-radius: 5px;
         text-decoration: none;
       }
-      p {
-        margin: 10px 0;
+      /* Media query for mobile devices */
+      @media (max-width: 768px) {
+        .input-box {
+          width: 90%;
+          font-size: 18px; /* Make the text even larger on mobile */
+        }
       }
     </style>
   </head>
@@ -51,30 +50,21 @@
     <div class="container">
       <div class="input-box">
         <h1>Your Ticket to Whiskey Wisdom</h1>
-        <p>
-          Enter to win the whiskey lover's ultimate prize - Hibiki 17! We're
-          raffling off this incredible bounty to support publishing the
-          definitive guide to the last 100 years of whiskey history. Only 150
-          tickets will be sold, so don't miss your chance. </p><br />
-          Buy one $25 ticket and you're entered to win. $50 triples your odds with 3 raffle tickets. Go all in with the $100 VIP package for 7 entries plus an invitation to an exclusive whiskey tasting with the author. It's an afficionado's dream event - try rare, vintage pours and get the inside scoop on the guide straight from the expert.</p></br>
-          Every ticket supports making this must-have whiskey book a reality.
-          It will cover everything from history and production to developing your palate
-          and even how to find iconic bottles and hidden gems. Get a sneak peak at what's inside.</p></br>
-          <i><b>Master Distillers: Pioneers of Irish Whiskey</b></p><br />
-          During the 18th and 19th centuries, the rise of Irish whiskey can be attributed to a group of forward-thinking innovators. These individuals introduced groundbreaking distilling techniques and demonstrated exceptional business skills, ultimately laying the groundwork for Ireland's whiskey industry.
-          One notable figure representing the entrepreneurial spirit of Irish whiskey was John Jameson. Originally hailing from Scotland, Jameson utilized his family connections to the distilling trade and established his own distillery in Dublin in 1780, which would later bear his name. He made significant advancements in production methods and placed great emphasis on maintaining high-quality standards. Through his ingenuity, Irish whiskey became renowned for its smoothness and purity under Jameson's influence.</p><br />
-          John Power took a comparable path of innovation. In 1789, he assumed control of his family's modest distillery located on Thomas Street and pursued an ambitious expansion of production. By the 1880s, the John Power & Son distillery had grown to become one of Dublin's largest, bottling and exporting whiskey to various corners of the globe.</p><br />
-          The Haig and Stein families were influential figures in the world of Irish distilling. They were the ones who introduced the single pot still style of whiskey, which involves distilling a combination of malted and unmalted barley. This particular method created a distinctly Irish whiskey that became incredibly popular among consumers.</p><br />
-          Behind the scenes, skilled master distillers such as George Roe and Sir Robert Arbuthnott refined their craft. Their technical expertise played a vital role in improving the distillation processes and ensuring consistency in the production of Irish whiskey.</p><br />
-          Other innovative distillers, like Henry Conyngham, took the industry further. Conyngham traveled to Scotland and came back to Ireland to establish the country's very first licensed grain distillery. This development brought about the use of more efficient continuous stills.</p><br />
-          Together, these pioneers of distilling played a significant role in promoting Irish whiskey to the world. Their contributions were instrumental in shaping one of the leading whiskey industries during the 19th century. Despite changing markets over time, their creative thinking and entrepreneurial spirit continue to inspire and drive the resilient resurgence of Irish whiskey today.</i></p><br />
-
-          Only 150 tickets will be sold, so act fast! Buy your tickets today and you could win Hibiki 17 to add to your whiskey collection.
-
-        </p>
-        <br />
-        <a href="https://venmo.com/u/NeilleCaroline" class="button">Purchase Ticket</a>
+        <p>Enter to win the whiskey lover's ultimate prize - Hibiki 17! We're raffling off this incredible bounty to support publishing the definitive guide to the last 100 years of whiskey history. Only 150 tickets will be sold, so don't miss your chance.</p>
+        <p>Buy one $25 ticket and you're entered to win. $50 triples your odds with 3 raffle tickets. Go all in with the $100 VIP package for seven entries plus an invitation to an exclusive whiskey tasting with the author. It's an aficionado's dream event - try rare, vintage pours and get the inside scoop on the guide straight from the expert.</p>
+        <p>Every ticket supports making this must-have whiskey book a reality. It will cover everything from history and production to developing your palate and even how to find iconic bottles and hidden gems. Get a sneak peek at what's inside:</p>
+        <p><i><b>Master Distillers: Pioneers of Irish Whiskey</b></i></p>
+        <p><i>During the 18th and 19th centuries, the rise of Irish whiskey can be attributed to a group of forward-thinking innovators. These individuals introduced groundbreaking distilling techniques and demonstrated exceptional business skills, ultimately laying the groundwork for Ireland's whiskey industry.</p>
+        <p>One notable figure representing the entrepreneurial spirit of Irish whiskey was John Jameson. Originally hailing from Scotland, Jameson utilized his family connections to the distilling trade and established his own distillery in Dublin in 1780, which would later bear his name. He made significant advancements in production methods and placed great emphasis on maintaining high-quality standards. Through his ingenuity, Irish whiskey became renowned for its smoothness and purity under Jameson's influence.</p>
+        <p>John Power took a comparable path of innovation. In 1789, he assumed control of his family's modest distillery located on Thomas Street and pursued an ambitious expansion of production. By the 1880s, the John Power & Son distillery had grown to become one of Dublin's largest, bottling and exporting whiskey to various corners of the globe.</p>
+        <p>The Haig and Stein families were influential figures in the world of Irish distilling. They were the ones who introduced the single pot still style of whiskey, which involves distilling a combination of malted and unmalted barley. This particular method created a distinctly Irish whiskey that became incredibly popular among consumers.</p>
+        <p>Behind the scenes, skilled master distillers such as George Roe and Sir Robert Arbuthnott refined their craft. Their technical expertise played a vital role in improving the distillation processes and ensuring consistency in the production of Irish whiskey.</p>
+        <p>Other innovative distillers, like Henry Conyngham, took the industry further. Conyngham traveled to Scotland and came back to Ireland to establish the country's very first licensed grain distillery. This development brought about the use of more efficient continuous stills.</p>
+        <p>Together, these pioneers of distilling played a significant role in promoting Irish whiskey to the world. Their contributions were instrumental in shaping one of the leading whiskey industries during the 19th century. Despite changing markets over time, their creative thinking and entrepreneurial spirit continue to inspire and drive the resilient resurgence of Irish whiskey today.</p></i>
+        <p>Only 150 tickets will be sold, so act fast! Buy your tickets today and you could win Hibiki 17 to add to your whiskey collection.</p>
       </div>
+      <a href="purchase_ticket.html" class="button">Purchase Tickets</a>
+      <!-- Moved out of .input-box -->
     </div>
   </body>
 </html>
